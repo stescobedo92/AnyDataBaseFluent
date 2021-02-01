@@ -13,13 +13,8 @@ Currently supported databases are:
 - SQLServer
 
 <pre><code>
-DatabaseFactory.Create( databaseType )
-	.WithName( "AnyBusiness" )
-	.UsingSchema( "Test" )
-	.HasTable(
-	table => table
-	         	.WithName( "Companies" )
-	         	.HasColumn(
+DatabaseFactory.Create( databaseType ).WithName( "AnyBusiness" ).UsingSchema( "Test" ).HasTable(
+	table => table.WithName( "Companies" ).HasColumn(
 	         	column => column.WithName( "Id" ).OfType( SqlDbType.Int ).IsAutoIncrementing()
 	         	          	.HasConstraint( constraint => constraint.OfType( ConstraintType.NotNull ) )
 	         	          	.HasConstraint(
