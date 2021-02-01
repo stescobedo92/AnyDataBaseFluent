@@ -1,11 +1,10 @@
 ﻿#region License
 // Copyright 2021 Sergio Triana Escobedo
 #endregion
-
 using System;
 using System.IO;
 
-namespace AnyDataBaseFluent.Access
+namespace AnyDataBaseFluent.Firebird
 {
 	public class Constraint : ConstraintBase
 	{

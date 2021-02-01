@@ -4,7 +4,7 @@
 using System;
 using System.IO;
 
-namespace AnyDataBaseFluent.Access
+namespace AnyDataBaseFluent.Firebird
 {
 	public class Column : ColumnBase
 	{
