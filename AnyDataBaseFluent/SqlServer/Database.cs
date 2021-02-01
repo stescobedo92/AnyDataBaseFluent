@@ -3,8 +3,9 @@
 #endregion
 using System;
 using System.IO;
+using AnyDataBaseFluent.Interfaces;
 
-namespace AnyDataBaseFluent.Firebird
+namespace AnyDataBaseFluent.SqlServer
 {
 	public class Database : DatabaseBase
 	{

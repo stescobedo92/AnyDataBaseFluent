@@ -1,12 +1,15 @@
 ﻿#region License
 // Copyright 2021 Sergio Triana Escobedo
 #endregion
-namespace AnyDataBaseFluent.Firebird
+
+using AnyDataBaseFluent.Exception;
+
+namespace AnyDataBaseFluent.Sqlite
 {
 	/// <summary>
 	/// Represents errors that occur when creating a Firebird database.
 	/// </summary>
-	public class AnyDataBaseFluentSqliteException : AnyDataBaseFluentException
+	public class AnyDataBaseFluentSqliteException : AnyDatabaseFluentDatabaseException
 	{
 		/// <summary>
 		/// Creates a new instance of FluentDatabaseFirebirdException.

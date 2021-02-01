@@ -19,6 +19,7 @@ namespace AnyDataBaseFluent
 		protected List<IConstraint> Constraints { get; set; }
 
 		protected abstract void WriteColumn(StreamWriter writer);
+		protected abstract IConstraint CreateConstraint();
 
 		protected ColumnBase()
 		{
@@ -63,9 +64,7 @@ namespace AnyDataBaseFluent
 			Constraints.Add(newConstraint);
 			return this;
 		}
-
-		protected abstract IConstraint CreateConstraint();
-
+		
 		public void Write(StreamWriter writer)
 		{
 			WriteColumn(writer);

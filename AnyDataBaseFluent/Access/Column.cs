@@ -3,6 +3,7 @@
 #endregion
 using System;
 using System.IO;
+using AnyDataBaseFluent.Interfaces;
 
 namespace AnyDataBaseFluent.Access
 {
@@ -10,6 +11,7 @@ namespace AnyDataBaseFluent.Access
 	{
 		protected override void WriteColumn( StreamWriter writer )
 		{
+			//
 		}
 
 		protected override IConstraint CreateConstraint()

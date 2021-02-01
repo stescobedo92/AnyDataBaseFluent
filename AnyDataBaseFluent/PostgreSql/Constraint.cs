@@ -4,7 +4,7 @@
 using System;
 using System.IO;
 
-namespace AnyDataBaseFluent.Firebird
+namespace AnyDataBaseFluent.PostgreSql
 {
 	public class Constraint : ConstraintBase
 	{

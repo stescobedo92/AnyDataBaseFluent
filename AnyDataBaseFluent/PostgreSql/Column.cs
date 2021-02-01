@@ -3,8 +3,9 @@
 #endregion
 using System;
 using System.IO;
+using AnyDataBaseFluent.Interfaces;
 
-namespace AnyDataBaseFluent.Firebird
+namespace AnyDataBaseFluent.PostgreSql
 {
 	public class Column : ColumnBase
 	{

@@ -9,7 +9,7 @@ namespace AnyDataBaseFluent.Exception
 	/// <summary>
 	/// Represents errors that occur when using FluentDatabase.
 	/// </summary>
-	class AnyDatabaseFluentDatabaseException : Exception
+	public class AnyDatabaseFluentDatabaseException : System.Exception
     {
         /// <summary>
 		/// Creates a new instance of FluentDatabaseException.

@@ -1,6 +1,7 @@
 ﻿#region License
 // Copyright 2021 Sergio Triana Escobedo
 #endregion
+
 using System;
 using System.IO;
 
