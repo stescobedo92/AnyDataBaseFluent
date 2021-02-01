@@ -6,12 +6,12 @@ namespace AnyDataBaseFluent.Firebird
 	/// <summary>
 	/// Represents errors that occur when creating a Firebird database.
 	/// </summary>
-	public class AnyDataBaseFluentOracleException : AnyDataBaseFluentException
+	public class AnyDataBaseFluentSqliteException : AnyDataBaseFluentException
 	{
 		/// <summary>
 		/// Creates a new instance of FluentDatabaseFirebirdException.
 		/// </summary>
 		/// <param name="message"></param>
-		public AnyDataBaseFluentOracleException( string message ) : base( message ) { }
+		public AnyDataBaseFluentSqliteException( string message ) : base( message ) { }
 	}
 }
