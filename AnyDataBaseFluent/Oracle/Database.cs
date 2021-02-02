@@ -16,6 +16,10 @@ namespace AnyDataBaseFluent.Oracle
 
 		protected override void WriteUse( StreamWriter writer )
 		{
+			if( !string.IsNullOrEmpty( Name ) )
+			{
+				writer.WriteLine( string.Format( "USE [{0}]", Name ) );
+			}
 		}
 	}
 }

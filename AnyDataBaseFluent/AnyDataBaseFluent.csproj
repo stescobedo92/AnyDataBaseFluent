@@ -2,6 +2,22 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Title>AnyDataBaseFluent</Title>
+    <Authors>Sergio Triana Escobedo</Authors>
+    <Description>AnyDataBaseFluent is a library written in C# using  fluent notation for create a number of different database types.
+
+Currently supported databases are:
+
+Access
+Firebird
+MySQL
+Oracle
+PostgreSQL
+SQLite
+SQLServer</Description>
+    <PackageIconUrl>https://github.com/stescobedo92/AnyDataBaseFluent/blob/master/image/bncf-icon-1.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/stescobedo92/AnyDataBaseFluent</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

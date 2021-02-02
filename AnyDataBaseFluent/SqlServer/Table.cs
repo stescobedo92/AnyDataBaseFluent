@@ -4,6 +4,7 @@
 using System;
 using System.IO;
 using AnyDataBaseFluent.Interfaces;
+using AnyDataBaseFluent.Resources;
 
 namespace AnyDataBaseFluent.SqlServer
 {
@@ -11,10 +12,18 @@ namespace AnyDataBaseFluent.SqlServer
 	{
 		protected override void WriteTableBegin( StreamWriter writer )
 		{
+			if( string.IsNullOrEmpty( Name ) )
+			{
+				throw new AnyDataBaseFluentSqlServerException( Resource_Designer.TableNameEmptyErrorMessage );
+			}
+
+			writer.WriteLine( string.Format( "CREATE TABLE [{0}].[{1}]", Schema, Name ) );
+			writer.WriteLine( "(" );
 		}
 
 		protected override void WriteTableEnd( StreamWriter writer )
 		{
+			writer.WriteLine( ")" );
 		}
 
 		protected override IColumn CreateColumn()
