@@ -16,8 +16,9 @@ Oracle
 PostgreSQL
 SQLite
 SQLServer</Description>
-    <PackageIconUrl>https://github.com/stescobedo92/AnyDataBaseFluent/blob/master/image/bncf-icon-1.png</PackageIconUrl>
+    <PackageIconUrl>https://github.com/stescobedo92/AnyDataBaseFluent/blob/master/image/bncf.jpg</PackageIconUrl>
     <RepositoryUrl>https://github.com/stescobedo92/AnyDataBaseFluent</RepositoryUrl>
+    <PackageVersion>1.1.0</PackageVersion>
   </PropertyGroup>
 
   <ItemGroup>
