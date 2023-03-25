@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFrameworks>net7.0;net6.0;net8.0;</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Title>AnyDataBaseFluent</Title>
+    <Title>BinaryCoffee.AnyDataBaseFluent</Title>
     <Authors>Sergio Triana Escobedo</Authors>
-    <Description>AnyDataBaseFluent is a library written in C# using  fluent notation for create a number of different database types.
+    <Description>BinaryCoffee.AnyDataBaseFluent  is a library written in C# using  fluent notation for create a number of different database types.
 
 Currently supported databases are:
 
@@ -18,11 +18,36 @@ SQLite
 SQLServer</Description>
     <PackageIconUrl>https://github.com/stescobedo92/AnyDataBaseFluent/blob/master/image/bncf.jpg</PackageIconUrl>
     <RepositoryUrl>https://github.com/stescobedo92/AnyDataBaseFluent</RepositoryUrl>
-    <PackageVersion>1.1.0</PackageVersion>
+    <PackageVersion>1.2.0</PackageVersion>
+    <PackageId>BinaryCoffee.AnyDataBaseFluent</PackageId>
+    <Version>1.2.0</Version>
+    <Company>Binary Coffee</Company>
+    <Product>BinaryCoffee.AnyDataBaseFluent</Product>
+    <Copyright>Copyright © Sergio Triana Escobedo 2023</Copyright>
+    <PackageIcon>binarycoffee.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>External, Libraries</PackageTags>
+    <PackageReleaseNotes>-Update icon
+-Update properties in the csproj</PackageReleaseNotes>
+    <AssemblyVersion>1.2.0</AssemblyVersion>
+    <FileVersion>1.2.0</FileVersion>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="Access\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\image\binarycoffee.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
