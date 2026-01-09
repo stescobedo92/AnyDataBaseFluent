@@ -1,28 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AnyDataBaseFluent.EnumTypes;
 using AnyDataBaseFluent.Interfaces;
 
 namespace AnyDataBaseFluent
 {
+    /// <summary>
+    /// Factory class for creating database instances based on the database type.
+    /// </summary>
     public static class DatabaseFactory
     {
-		public static IDatabase Create(DatabaseType databaseServer)
-		{
-			switch (databaseServer)
-			{
-				case DatabaseType.ACCESS: return new Access.Database();
-				case DatabaseType.FIREBIRD:	return new Firebird.Database();
-				case DatabaseType.MYSQL: return new MySql.Database();
-				case DatabaseType.ORACLE: return new Oracle.Database();
-				case DatabaseType.POSTGRESQL: return new PostgreSql.Database();
-				case DatabaseType.SQLITE: return new Sqlite.Database();
-				case DatabaseType.SQLSERVER: return new SqlServer.Database();
-				default: throw new NotSupportedException(string.Format("Database server '{0}' is not supported.", databaseServer));
-			}
-		}
-	}
+        /// <summary>
+        /// Creates a new database instance for the specified database type.
+        /// </summary>
+        /// <param name="databaseType">The type of database to create.</param>
+        /// <returns>A new instance of <see cref="IDatabase"/>.</returns>
+        /// <exception cref="NotSupportedException">Thrown when the database type is not supported.</exception>
+        public static IDatabase Create(DatabaseType databaseType) => databaseType switch
+        {
+            DatabaseType.ACCESS => new Access.Database(),
+            DatabaseType.FIREBIRD => new Firebird.Database(),
+            DatabaseType.MYSQL => new MySql.Database(),
+            DatabaseType.ORACLE => new Oracle.Database(),
+            DatabaseType.POSTGRESQL => new PostgreSql.Database(),
+            DatabaseType.SQLITE => new Sqlite.Database(),
+            DatabaseType.SQLSERVER => new SqlServer.Database(),
+            _ => throw new NotSupportedException($"Database server '{databaseType}' is not supported.")
+        };
+    }
 }
