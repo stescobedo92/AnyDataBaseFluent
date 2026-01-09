@@ -8,10 +8,10 @@ namespace AnyDataBaseFluent.EnumTypes
 {
     public enum ConstraintType
     {
-        PRIMARY_KEY = 1,
-        FOREIGN_KEY = 2,
-        UNIQUE = 3,
-        CHECK = 4,
-        NOT_NULLNot
+        PrimaryKey = 1,
+        ForeignKey = 2,
+        Unique = 3,
+        Check = 4,
+        NotNull = 5
     }
 }
